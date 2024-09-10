@@ -19,7 +19,7 @@ resource "aws_vpc" "hashicat" {
     name = "${var.prefix}-vpc-${var.region}"
     environment = "Production"
   }
-}
+} 
 
 resource "aws_subnet" "hashicat" {
   vpc_id     = aws_vpc.hashicat.id
